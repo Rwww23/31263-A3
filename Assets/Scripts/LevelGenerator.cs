@@ -21,16 +21,34 @@ public class LevelGenerator : MonoBehaviour
         {0,0,0,0,0,0,5,0,0,0,4,0,0,0},
     };
     // PPU = 64; sprite size = 128*128 => 2*2
-    // i = 2i + 1, j = 2j + 1, where i/j is the row/column index
-    // level01 - tiles - renderer
 
     void Start()
     {
-        //todo: clear current map
         Destroy(GameObject.Find("Level 01"));
         GameObject level = new GameObject("Level 01");
-        int x = levelMap.GetLength(0);
-        int y = levelMap.GetLength(1);
+        Sprite[] sprites = new Sprite[9];
+        for (int i = 0; i <= 8; i++)
+        {
+            sprites[i] = Resources.Load<Sprite>($"walls/{i}");
+        }
+        for (int row = 0; row < levelMap.GetLength(0); row++)
+        {
+            for (int col = 0; col < levelMap.GetLength(1); col++)
+                {
+                    int type = levelMap[row, col];
+                    
+                    if (type == 0)
+                        continue;
+                    
+                    GameObject tile = new GameObject("Tile");
+                    tile.transform.parent = level.transform;
+
+                    SpriteRenderer renderer = tile.AddComponent<SpriteRenderer>();
+                    renderer.sprite = sprites[type];
+                    tile.transform.position = new Vector3(2*col, 2*(levelMap.GetLength(0)-row), 0);
+                }
+            
+        }
 
 
 
