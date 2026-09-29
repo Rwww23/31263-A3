@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 897ab93224c836846b292acc7a64efe9
+guid: 54f7a4d14d2135f4d9ed42811ef0821e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5994012843278125480
-    second: 5-pellet_0
+      213: -855298285791758126
+    second: 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 5-pellet_0
+      name: 1_0
       rect:
         serializedVersion: 2
-        x: 60
-        y: 59
-        width: 9
-        height: 10
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a9c8be5ce20f2350800000000000000
-      internalID: 5994012843278125480
+      spriteID: 2d8b16a9dbe5124f0800000000000000
+      internalID: -855298285791758126
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b16819b073c63264e951e9f2c1a6f800
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      5-pellet_0: 5994012843278125480
+      1_0: -855298285791758126
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
