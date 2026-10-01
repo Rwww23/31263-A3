@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using System.Linq;
 
+// can be further abstracted but have no time 
 public class LevelGenerator : MonoBehaviour
 {
     int[,] levelMap =
@@ -77,10 +78,11 @@ public class LevelGenerator : MonoBehaviour
         return rotate[row,col+1];
     }       
 
+
     void Start()
     {
-        Destroy(GameObject.Find("Level 01"));
-        GameObject level = new GameObject("Level 01");
+        Destroy(GameObject.Find("Level 01 (Generated)"));
+        GameObject level = new GameObject("Quadrant (Generated)");
         Sprite[] sprites = new Sprite[9];
         rotate = new float[levelMap.GetLength(0),levelMap.GetLength(1)];
         GameObject[,] tiles = new GameObject[levelMap.GetLength(0),levelMap.GetLength(1)];
@@ -167,10 +169,10 @@ public class LevelGenerator : MonoBehaviour
                         Debug.Log("invalid layout: check "+row+","+col);
                     }// the four sides should never be 1/2, otherwise debug.log("invalid layout: check"+row+","+col)
 
-                    if (neighbours.Count(x => x is 0 or 5 or 6) > 2)
+                    if (neighbours.Count(x => x is 0 or 5 or 6) > 2) // no. of sides that are 0/5/6 == 2: the other two sides form the corner
                     {
                         Debug.Log("invalid layout: check "+row+","+col);
-                    }// no. sides that are 0/5/6 > 2: impossible; debug.log("invalid layout: check"+row+","+col)
+                    } // no. sides that are 0/5/6 > 2: impossible; debug.log("invalid layout: check"+row+","+col)
                     else if (neighbours.Count(x => x is 0 or 5 or 6) == 2)
                     {
                         // up & right == 0/5/6: rotate = 0f
@@ -190,7 +192,7 @@ public class LevelGenerator : MonoBehaviour
                         {
                             rotate[row,col] = 270f;
                         }                                                
-                    }// no. of sides that are 0/5/6 == 2: the other two sides form the corner
+                    }
                     else if (neighbours.Count(x => x is 0 or 5 or 6) == 1)
                     {
                         if (neighbours.Count(x => x is 5 or 6) == 1)
@@ -198,26 +200,277 @@ public class LevelGenerator : MonoBehaviour
                             Debug.Log("invalid layout: check"+row+","+col);
                             continue;
                         }
-                        //。要不我assume no complex shape吧
-                        
-                    }//no. of side that is 0/5/6 == 1: if it is 5/6, debug.log("invalid layout: check"+row+","+col); else the opposite side of 0 must be part of the corner
-                    else
-                    {
+                        else if (neighbours.Count(x => x is 4) == 3) //no. of side that is 0/5/6 == 1: if it is 5/6, debug.log("invalid layout: check"+row+","+col); else the opposite side of 0 must be part of the corner
+                        {
+                        // damn i will just assume there is no complex shapes and ignore other situations and also ignore the possibility of invalid input。！                            
+                            if (up == 0)
+                            {
+                                if (left_rotation == 0f)
+                                {
+                                    rotate[row,col] = 0f;
+                                }
+                                if (right_rotation == 0f)
+                                {
+                                    rotate[row,col] = 90f;                                    
+                                }                                
+                            }
+                            else if (down == 0)
+                            {
+                                if (left_rotation == 0f)
+                                {
+                                    rotate[row,col] = 270f;
+                                }
+                                if (right_rotation == 0f)
+                                {
+                                    rotate[row,col] = 180f;                                    
+                                }
+                            }
+                            else if (left == 0)
+                            {
+                                if (up_rotation == 90f)
+                                {
+                                    rotate[row,col] = 180f;
+                                }
+                                if (down_rotation == 90f)
+                                {
+                                    rotate[row,col] = 90f;                                    
+                                }                                
+                            }
+                            else if (right == 0)
+                            {
+                                if (up_rotation == 90f)
+                                {
+                                    rotate[row,col] = 180f;
+                                }
+                                if (down_rotation == 90f)
+                                {
+                                    rotate[row,col] = 90f;                                    
+                                }                                  
+                            }
+                        }
                         
                     }
+                    else // no. of side that is 0/5/6 == 0, i.e. all sides are 3/4/7/8/-1
+                    {
+                          
+                        if (neighbours.Count(x => x is 4) == 4)
+                        {
+                            //look for rotate = 90f in vertical direction (up/down) and 0f in horizontal direction (left & right)
+                            if (left_rotation is 0f && down_rotation is 90f or -1f)
+                            {
+                                // do nothing
+                            }
+                            else if (right_rotation is 0f or -1f && down_rotation is 90f or -1f)
+                            {
+                                rotate[row,col] = 90f;
+                            }
+                            else if (up_rotation is 90f && right_rotation is 0f or -1f)
+                            {
+                                rotate[row,col] = 180f;
+                            }
+                            else if (up_rotation is 90f && left_rotation is 0f)
+                            {
+                                rotate[row,col] = 270f;
+                            }
+                            else
+                            {
+                                Debug.Log("invalid layout: check "+row+","+col);
+                            }
+                        }
+                        if (neighbours.Count(x => x is 4) == 3)
+                        {
+                            if (up == 3)
+                            {
+                                if (down_rotation == 90f)
+                                {
+                                    if (left_rotation == 0f && right_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 0f;
+                                    }
+                                    else if (right_rotation == 0f && left_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 90f;
+                                    }
+                                    else
+                                    {
+                                        Debug.Log("invalid layout: check "+row+","+col);                                        
+                                    }                                    
+                                }
+                                if (down_rotation == 0f)
+                                {
+                                    if (left_rotation == 0f && right_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 270f;
+                                    }
+                                    else if (right_rotation == 0f && left_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 180f;
+                                    }
+                                    else
+                                    {
+                                        Debug.Log("invalid layout: check "+row+","+col);   
+                                        //Debug.Log("left"+left+left_rotation+"right"+right+right_rotation);                                        
+                                    }
+                                }
+                            }
+                            else if (right == 3)
+                            {
+                                if (left_rotation == 0f)
+                                {
+                                    if (up_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 270f;
+                                    }
+                                    if (down_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 0f;
+                                    }                                    
+                                }
+                                if (left_rotation == 90f)
+                                {
+                                    if (up_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 180f;
+                                    }
+                                    if (down_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 90f;
+                                    }                                       
+                                }
+                            }
+                            else if (down == 3)//？怎么有bug
+                            {
+                                if (up_rotation == 90f)
+                                {
+                                    if (left_rotation == 0f && right_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 270f;
+                                    }
+                                    else if (left_rotation == 90f && right_rotation == 0f)
+                                    {
+                                        rotate[row,col] = 180f;
+                                    }
+                                    else
+                                    {
+                                        Debug.Log("invalid layout: check "+row+","+col);
+                                        Debug.Log("left"+left+left_rotation+"right"+right+right_rotation);
+                                    }
+                                }
+                                if (up_rotation == 0f)
+                                {
+                                    if (left_rotation == 0f && right_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 0f;
+                                    }
+                                    else if (left_rotation == 90f && right_rotation == 0f)
+                                    {
+                                        rotate[row,col] = 90f;
+                                    }
+                                    else
+                                    {
+                                        Debug.Log("invalid layout: check "+row+","+col);    
+                                        Debug.Log("left"+left+left_rotation+"right"+right+right_rotation);                                         
+                                    }
+                                }
+                            }
+                            else if (left == 3)
+                            {
+                                if (right_rotation == 0f)
+                                {
+                                    if (up_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 180f;
+                                    }
+                                    if (down_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 90f;
+                                    }                                    
+                                }
+                                if (right_rotation == 90f)
+                                {
+                                    if (up_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 270f;
+                                    }
+                                    if (down_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 0f;
+                                    }                                       
+                                }
+                            else if (right == -1)
+                            {
+                                if (left_rotation == 0f)
+                                {
+                                    if (up_rotation == 90f && down_rotation == 0f)
+                                    {
+                                        rotate[row,col] = 270f;
+                                    }
+                                    else if (up_rotation == 0f && down_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 0f;
+                                    }
+                                    else
+                                    {
+                                        Debug.Log("invalid layout: check "+row+","+col);
+                                    }                                    
+                                }
+                                else
+                                {
+                                    if (up_rotation == 90f && down_rotation == 0f)
+                                    {
+                                        rotate[row,col] = 180f;
+                                    }
+                                    else if (up_rotation == 0f && down_rotation == 90f)
+                                    {
+                                        rotate[row,col] = 90f;
+                                    }
+                                    else
+                                    {
+                                        Debug.Log("invalid layout: check "+row+","+col);
+                                    }                                    
+                                }
+                            }
+                            else if (down == -1)
+                            {
+                                // assume at least one spare row from the bottom for now, i.e. this is impossible
+                            }
+                            else
+                            {
+                                Debug.Log("invalid layout: check "+row+","+col);
+                            }
+                        }                        
+                        if (neighbours.Count(x => x is 4) == 2)
+                        {
+                            //4在对侧需相互垂直，在邻侧需相互平行
+                        }
+                        // assume no more complicated obstacle shapes for now
+                        
+                    }
+                }        
                 tiles[row,col].transform.rotation =
-                    Quaternion.Euler(0, 0, rotate[row,col]);    
-                }
-
-        
-
-                    //no. of side that is 0/5/6 == 0, i.e. all sides are 3/4/7/8                       
+                    Quaternion.Euler(0, 0, rotate[row,col]);  
             }
-        }        
+        }         
+    }// END OF FOR LOOPS
 
+GameObject upper = new GameObject("Upper Quadrants");
+GameObject full = new GameObject("Level 01 (Generated)");
+upper.transform.parent = full.transform; 
+level.transform.parent = upper.transform;
+GameObject flippedQuadrant = Instantiate(level, upper.transform);
+flippedQuadrant.name = "Flipped Quadrant";
+flippedQuadrant.transform.localScale = new Vector3(-1,1,1);
+flippedQuadrant.transform.localPosition = new Vector3(2*levelMap.GetLength(1),0,0);
+GameObject lower = Instantiate(upper, full.transform);
+lower.transform.localScale = new Vector3(1,-1,1);
+lower.name = "Lower Quadrants";
+Debug.Log(level.transform.position);
+Debug.Log(upper.transform.position);
+Debug.Log(full.transform.position);
+Debug.Log(flippedQuadrant.transform.position);
 
+Debug.Log(upper.transform.localScale);
+Debug.Log(flippedQuadrant.transform.parent.name);
 
-        
-    }
-
+}// END OF START
 }
