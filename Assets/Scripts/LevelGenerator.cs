@@ -458,19 +458,14 @@ GameObject full = new GameObject("Level 01 (Generated)");
 upper.transform.parent = full.transform; 
 level.transform.parent = upper.transform;
 GameObject flippedQuadrant = Instantiate(level, upper.transform);
+flippedQuadrant.transform.parent = upper.transform;
 flippedQuadrant.name = "Flipped Quadrant";
 flippedQuadrant.transform.localScale = new Vector3(-1,1,1);
-flippedQuadrant.transform.localPosition = new Vector3(2*levelMap.GetLength(1),0,0);
+flippedQuadrant.transform.localPosition = new Vector3(4*levelMap.GetLength(1)-2,0,0);
 GameObject lower = Instantiate(upper, full.transform);
 lower.transform.localScale = new Vector3(1,-1,1);
 lower.name = "Lower Quadrants";
-Debug.Log(level.transform.position);
-Debug.Log(upper.transform.position);
-Debug.Log(full.transform.position);
-Debug.Log(flippedQuadrant.transform.position);
-
-Debug.Log(upper.transform.localScale);
-Debug.Log(flippedQuadrant.transform.parent.name);
+lower.transform.localPosition = new Vector3(0,2,0);
 
 }// END OF START
 }
