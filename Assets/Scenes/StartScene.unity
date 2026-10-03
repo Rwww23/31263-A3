@@ -119,6 +119,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &931414075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6218306426708782993, guid: 6d3d80fc32ccaff47a9f7cf3f427bfd1, type: 3}
+  m_PrefabInstance: {fileID: 76430172876743469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &931414079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931414075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e5c77657161f954280a442e62fb1d40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::p_movement
 --- !u!1001 &1031194550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -242,11 +259,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4122208661328208687, guid: 6d3d80fc32ccaff47a9f7cf3f427bfd1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4122208661328208687, guid: 6d3d80fc32ccaff47a9f7cf3f427bfd1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4122208661328208687, guid: 6d3d80fc32ccaff47a9f7cf3f427bfd1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -287,7 +304,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6218306426708782993, guid: 6d3d80fc32ccaff47a9f7cf3f427bfd1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 931414079}
   m_SourcePrefab: {fileID: 100100000, guid: 6d3d80fc32ccaff47a9f7cf3f427bfd1, type: 3}
 --- !u!1001 &588965386785867119
 PrefabInstance:
@@ -490,15 +510,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6948410819609355436, guid: a41e8f75d0783a8479e0ba16bfb5acdf, type: 3}
       propertyPath: orthographic size
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7024755652106526948, guid: a41e8f75d0783a8479e0ba16bfb5acdf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7024755652106526948, guid: a41e8f75d0783a8479e0ba16bfb5acdf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7024755652106526948, guid: a41e8f75d0783a8479e0ba16bfb5acdf, type: 3}
       propertyPath: m_LocalPosition.z
