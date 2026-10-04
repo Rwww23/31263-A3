@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,45 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy2Death_0
+      name: e2_death_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 23
-        width: 111
-        height: 49
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f3a4de1f742d7eac0800000000000000
-      internalID: -3825858151984575937
+      spriteID: c3be0bad4934933438c6e04a5a758165
+      internalID: 712139482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy2Death_1
+      name: e2_death_1
       rect:
         serializedVersion: 2
-        x: 139
-        y: 22
-        width: 117
-        height: 51
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3c0a1c4485dafabb0800000000000000
-      internalID: -4922525273070395197
+      spriteID: 7470feb9e79127745bade8293ce1e776
+      internalID: -807730233
       vertices: []
       indices: 
       edges: []
@@ -158,10 +158,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy2Death_0: -3825858151984575937
-      Enemy2Death_1: -4922525273070395197
+      e2_death_0: 712139482
+      e2_death_1: -807730233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

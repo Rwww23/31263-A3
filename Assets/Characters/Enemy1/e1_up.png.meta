@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,89 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy1NormalUp_0
+      name: e1_up_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 30
-        width: 33
-        height: 76
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 01fa15717bdb50e70800000000000000
-      internalID: 9080872817730367248
+      spriteID: 0ab3c74536fb96c4d8d30d0caf381623
+      internalID: -1213583976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalUp_1
+      name: e1_up_1
       rect:
         serializedVersion: 2
-        x: 176
-        y: 31
-        width: 35
-        height: 75
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b1c1d098496515ec0800000000000000
-      internalID: -3579985032828347365
+      spriteID: 63972c91b844ed24ba47de28436fe7b5
+      internalID: 1776641766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalUp_2
+      name: e1_up_2
       rect:
         serializedVersion: 2
-        x: 304
-        y: 32
-        width: 36
-        height: 71
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b5620fdd44c56a500800000000000000
-      internalID: 407114267174643291
+      spriteID: 028700bc239860243a032d1323ffd861
+      internalID: 1903844999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalUp_3
+      name: e1_up_3
       rect:
         serializedVersion: 2
-        x: 433
-        y: 34
-        width: 35
-        height: 68
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ff7e37b9a05869090800000000000000
-      internalID: -8028083005137098753
+      spriteID: de1609b3531861547bd0932a7f8a0302
+      internalID: -466071416
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3471def4575f9db44a0eb2dda76680e0
     internalID: 0
     vertices: []
     indices: 
@@ -208,12 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy1NormalUp_0: 9080872817730367248
-      Enemy1NormalUp_1: -3579985032828347365
-      Enemy1NormalUp_2: 407114267174643291
-      Enemy1NormalUp_3: -8028083005137098753
+      e1_up_0: -1213583976
+      e1_up_1: 1776641766
+      e1_up_2: 1903844999
+      e1_up_3: -466071416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

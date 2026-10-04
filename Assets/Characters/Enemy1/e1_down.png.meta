@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,111 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy1NormalDown_0
+      name: e1_down_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 22
-        width: 35
-        height: 87
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 610d85049ccf9f1e0800000000000000
-      internalID: -2163420204676624362
+      spriteID: ed385f272c4b10946965cd2d8c78dbae
+      internalID: 916494962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalDown_1
+      name: e1_down_1
       rect:
         serializedVersion: 2
-        x: 173
-        y: 19
-        width: 32
-        height: 90
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 792f39e1db96324a0800000000000000
-      internalID: -6619330766321749353
+      spriteID: e3b7341b9abab194dbdaf8e53cdff0a2
+      internalID: -1715567963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalDown_2
+      name: e1_down_2
       rect:
         serializedVersion: 2
-        x: 301
-        y: 20
-        width: 32
-        height: 87
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c28803a7d396209a0800000000000000
-      internalID: -6268332018582386644
+      spriteID: eff984a9c54bb2c4ca1d5f554736e6c0
+      internalID: 977772082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalDown_3
+      name: e1_down_3
       rect:
         serializedVersion: 2
-        x: 429
-        y: 20
-        width: 31
-        height: 85
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 004ec1c0b6734f220800000000000000
-      internalID: 2518699024511198208
+      spriteID: a3a3ada0fd900a64fa2839718c073548
+      internalID: 2124015590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalDown_4
+      name: e1_down_4
       rect:
         serializedVersion: 2
-        x: 557
-        y: 22
-        width: 30
-        height: 82
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a7312d05834f1dec0800000000000000
-      internalID: -3543782909052578950
+      spriteID: 197d8e765e14dc6498634ade12ea1840
+      internalID: 879902140
       vertices: []
       indices: 
       edges: []
@@ -225,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: aa351b16a68397a45baa35f4f9c4ce15
     internalID: 0
     vertices: []
     indices: 
@@ -233,13 +233,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy1NormalDown_0: -2163420204676624362
-      Enemy1NormalDown_1: -6619330766321749353
-      Enemy1NormalDown_2: -6268332018582386644
-      Enemy1NormalDown_3: 2518699024511198208
-      Enemy1NormalDown_4: -3543782909052578950
+      e1_down_0: 916494962
+      e1_down_1: -1715567963
+      e1_down_2: 977772082
+      e1_down_3: 2124015590
+      e1_down_4: 879902140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

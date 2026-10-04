@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,89 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: e1_scared_3
+      name: e1_scared_right_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 34
-        width: 127
-        height: 49
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fb654a61c49d8d330800000000000000
-      internalID: 3735974811724437183
+      spriteID: c5a400ab8a16f2c49b68c58f561423d7
+      internalID: -1508812084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e1_scared_2
+      name: e1_scared_right_1
       rect:
         serializedVersion: 2
-        x: 130
-        y: 33
-        width: 124
-        height: 48
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95519347dcba1afa0800000000000000
-      internalID: -5791158746915203751
+      spriteID: 42c2b454b70134f42bd398dd740770d9
+      internalID: 1490420570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e1_scared_1
+      name: e1_scared_right_2
       rect:
         serializedVersion: 2
-        x: 258
-        y: 32
-        width: 124
-        height: 50
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43821cc6b9968f280800000000000000
-      internalID: -9009334938289231820
+      spriteID: 3358526b7f79ded47a39defe2cc11ee1
+      internalID: 49351001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e1_scared_0
+      name: e1_scared_right_3
       rect:
         serializedVersion: 2
-        x: 386
-        y: 33
-        width: 126
-        height: 51
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 382e2f057f3bcdb30800000000000000
-      internalID: 4313520417910481539
+      spriteID: 8ce309c7d940eaf46a9a77b5c0dada7e
+      internalID: -1737874009
       vertices: []
       indices: 
       edges: []
@@ -208,12 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      e1_scared_0: 4313520417910481539
-      e1_scared_1: -9009334938289231820
-      e1_scared_2: -5791158746915203751
-      e1_scared_3: 3735974811724437183
+      e1_scared_right_0: -1508812084
+      e1_scared_right_1: 1490420570
+      e1_scared_right_2: 49351001
+      e1_scared_right_3: -1737874009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,89 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy1NormalLeft_0
+      name: e1_left_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 34
-        width: 126
-        height: 47
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 877cc650783b7a150800000000000000
-      internalID: 5883868830675814264
+      spriteID: e2fa47de3d1bd5247ad60568f87c87c0
+      internalID: -733748447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalLeft_1
+      name: e1_left_1
       rect:
         serializedVersion: 2
-        x: 130
-        y: 33
-        width: 124
-        height: 48
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3aacb1d8f2b5988f0800000000000000
-      internalID: -537798420705064285
+      spriteID: 4809b292601c30247bace5549c8a1dd3
+      internalID: -1492866864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalLeft_2
+      name: e1_left_2
       rect:
         serializedVersion: 2
-        x: 258
-        y: 32
-        width: 124
-        height: 50
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 29885966715e7c0b0800000000000000
-      internalID: -5708342114000729966
+      spriteID: a7e1f3c53707a0d4083e33c0ed943bc4
+      internalID: -1066178889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1NormalLeft_3
+      name: e1_left_3
       rect:
         serializedVersion: 2
-        x: 386
-        y: 33
-        width: 113
-        height: 50
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 84151978934051900800000000000000
-      internalID: 654433965986369864
+      spriteID: ff6d11de4fa4b954d8292fbbdebf349c
+      internalID: 78034483
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 367388ed8e2ef044795ddb36df629889
     internalID: 0
     vertices: []
     indices: 
@@ -208,12 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy1NormalLeft_0: 5883868830675814264
-      Enemy1NormalLeft_1: -537798420705064285
-      Enemy1NormalLeft_2: -5708342114000729966
-      Enemy1NormalLeft_3: 654433965986369864
+      e1_left_0: -733748447
+      e1_left_1: -1492866864
+      e1_left_2: -1066178889
+      e1_left_3: 78034483
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

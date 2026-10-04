@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,111 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy1ScaredDown_0
+      name: e1_scared_down_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 22
-        width: 36
-        height: 88
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b6fc8694b76389d0800000000000000
-      internalID: -2773258920212498764
+      spriteID: caaae3e636cc8b044bc12be3fa85627b
+      internalID: 1697536020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1ScaredDown_1
+      name: e1_scared_down_1
       rect:
         serializedVersion: 2
-        x: 172
-        y: 19
-        width: 34
-        height: 91
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9a5e46ddb3466fc20800000000000000
-      internalID: 3239887190219875753
+      spriteID: 9aa90f2d91b00334398e5d09cb1c5960
+      internalID: -1124530689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1ScaredDown_2
+      name: e1_scared_down_2
       rect:
         serializedVersion: 2
-        x: 301
-        y: 20
-        width: 32
-        height: 87
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 00f2995d0df0679c0800000000000000
-      internalID: -3929936235222978816
+      spriteID: 587a5a606d9e2bb4a8f205e4de0694fd
+      internalID: 1300871744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1ScaredDown_3
+      name: e1_scared_down_3
       rect:
         serializedVersion: 2
-        x: 429
-        y: 20
-        width: 32
-        height: 85
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d2371d13ad82a8080800000000000000
-      internalID: -9184483572464913619
+      spriteID: 36385b23377ac4f40aba0451c02fb48d
+      internalID: 1893255160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1ScaredDown_4
+      name: e1_scared_down_4
       rect:
         serializedVersion: 2
-        x: 556
-        y: 22
-        width: 33
-        height: 83
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: abc3cd321ca905360800000000000000
-      internalID: 7156389962212719802
+      spriteID: c63df931707ea88488f5291db54154e6
+      internalID: -356862704
       vertices: []
       indices: 
       edges: []
@@ -225,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 80911521601972b448347b71cd0ab14d
     internalID: 0
     vertices: []
     indices: 
@@ -233,13 +233,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy1ScaredDown_0: -2773258920212498764
-      Enemy1ScaredDown_1: 3239887190219875753
-      Enemy1ScaredDown_2: -3929936235222978816
-      Enemy1ScaredDown_3: -9184483572464913619
-      Enemy1ScaredDown_4: 7156389962212719802
+      e1_scared_down_0: 1697536020
+      e1_scared_down_1: -1124530689
+      e1_scared_down_2: 1300871744
+      e1_scared_down_3: 1893255160
+      e1_scared_down_4: -356862704
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
