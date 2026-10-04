@@ -10,6 +10,7 @@ public class p_movement : MonoBehaviour
     Vector3 corner1;
     Vector3 corner2;
     Vector3 corner3;
+    Animator animator;
 
     
     Vector3 CornerPosition(Vector3 corner)
@@ -42,12 +43,15 @@ public class p_movement : MonoBehaviour
         corner1 = CornerPosition(new Vector3(1,6,0));
         corner2 = CornerPosition(new Vector3(5,6,0));
         corner3 = CornerPosition(new Vector3(5,1,0));
+        /*
         Debug.Log(corner0);
         Debug.Log(corner1);
         Debug.Log(corner2);
         Debug.Log(corner3);
+        */
         transform.position = corner0;
         startTime = Time.time;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -57,19 +61,33 @@ public class p_movement : MonoBehaviour
         {
             case 0:
                 if (Move(corner0, corner1, startTime))
+                {
                     movement = 1;
+                    animator.SetInteger("Direction",movement);                    
+                }
                 break;
             case 1:
                 if (Move(corner1, corner2, startTime))
+                {
                     movement = 2;
+                    animator.SetInteger("Direction",movement);                    
+                }
+
                 break;
             case 2:
                 if (Move(corner2, corner3, startTime))
+                {
                     movement = 3;
+                    animator.SetInteger("Direction",movement);
+                }
                 break;
             case 3:
                 if (Move(corner3, corner0, startTime))
+                {
                     movement = 0;
+                    animator.SetInteger("Direction",movement);                    
+                    
+                }
                 break;                                
 
         }

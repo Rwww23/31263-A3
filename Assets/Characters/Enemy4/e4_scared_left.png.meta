@@ -109,89 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy4ScaredLeft_0
+      name: e4_scared_left_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 34
-        width: 126
-        height: 47
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 19bd6e43207f1c210800000000000000
-      internalID: 1351632952037399441
+      spriteID: aa7662519cd9dab4abc419c7b532b631
+      internalID: -317881206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy4ScaredLeft_1
+      name: e4_scared_left_1
       rect:
         serializedVersion: 2
-        x: 130
-        y: 33
-        width: 125
-        height: 48
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2b664d33fbf2bd1a0800000000000000
-      internalID: -6783775915448703310
+      spriteID: e313a6cb54b53ab44804c902827e1b27
+      internalID: -1754720113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy4ScaredLeft_2
+      name: e4_scared_left_2
       rect:
         serializedVersion: 2
-        x: 258
-        y: 33
-        width: 123
-        height: 49
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3b8f66863949503a0800000000000000
-      internalID: -6699785509811062605
+      spriteID: cd4c6889a0e7a5c4491a6c30c4a8494f
+      internalID: -1946412162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy4ScaredLeft_3
+      name: e4_scared_left_3
       rect:
         serializedVersion: 2
-        x: 386
-        y: 34
-        width: 116
-        height: 49
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d009016ca94644ae0800000000000000
-      internalID: -1566016154507374579
+      spriteID: b98636beec855ed49995641769f73d8e
+      internalID: -2123640350
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1d260d2bcbade1b479c80b057cc763b2
     internalID: 0
     vertices: []
     indices: 
@@ -208,12 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy4ScaredLeft_0: 1351632952037399441
-      Enemy4ScaredLeft_1: -6783775915448703310
-      Enemy4ScaredLeft_2: -6699785509811062605
-      Enemy4ScaredLeft_3: -1566016154507374579
+      e4_scared_left_0: -317881206
+      e4_scared_left_1: -1754720113
+      e4_scared_left_2: -1946412162
+      e4_scared_left_3: -2123640350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

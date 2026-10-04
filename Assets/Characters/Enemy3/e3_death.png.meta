@@ -103,45 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy3Death_0
+      name: e3_death_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 26
-        width: 104
-        height: 42
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a34366ff2ef4a4990800000000000000
-      internalID: -7401015201263897542
+      spriteID: 96481ce18de92e541baa7982e3b33a41
+      internalID: -900877690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy3Death_1
+      name: e3_death_1
       rect:
         serializedVersion: 2
-        x: 144
-        y: 26
-        width: 104
-        height: 43
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 477c6c080209f2c60800000000000000
-      internalID: 7795607949275481972
+      spriteID: ec739b466e46b6145951c37d14dfc452
+      internalID: 1396272320
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3fc82aeef13a4f742ae9f5157f0ad317
     internalID: 0
     vertices: []
     indices: 
@@ -158,10 +158,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy3Death_0: -7401015201263897542
-      Enemy3Death_1: 7795607949275481972
+      e3_death_0: -900877690
+      e3_death_1: 1396272320
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

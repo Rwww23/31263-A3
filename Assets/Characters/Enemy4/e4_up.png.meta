@@ -109,89 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy4NormalUp_0
+      name: e4_up_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 30
-        width: 33
-        height: 76
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 73ef8fa4ea9687cc0800000000000000
-      internalID: -3713101695463915977
+      spriteID: 9f112eb5d496af042a521b981c86d83d
+      internalID: 237794339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy4NormalUp_1
+      name: e4_up_1
       rect:
         serializedVersion: 2
-        x: 176
-        y: 31
-        width: 35
-        height: 75
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 78c9dc6e2cfb66b80800000000000000
-      internalID: -8401817210996286329
+      spriteID: 3884971cc4d406c48b67e0dbe7255551
+      internalID: 2091765141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy4NormalUp_2
+      name: e4_up_2
       rect:
         serializedVersion: 2
-        x: 304
-        y: 32
-        width: 36
-        height: 71
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fd170f9a6a61296d0800000000000000
-      internalID: -2985298697921728033
+      spriteID: 411e27a7991b6004499bb069a59772f4
+      internalID: 1085626835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy4NormalUp_3
+      name: e4_up_3
       rect:
         serializedVersion: 2
-        x: 433
-        y: 34
-        width: 35
-        height: 68
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e8660d77d60dec780800000000000000
-      internalID: -8660755864806726002
+      spriteID: 1236246fee5c85e4c9afa7e7734bba80
+      internalID: 951291912
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ef41caa3839b8104fab5c2981a0e1226
     internalID: 0
     vertices: []
     indices: 
@@ -208,12 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy4NormalUp_0: -3713101695463915977
-      Enemy4NormalUp_1: -8401817210996286329
-      Enemy4NormalUp_2: -2985298697921728033
-      Enemy4NormalUp_3: -8660755864806726002
+      e4_up_0: 237794339
+      e4_up_1: 2091765141
+      e4_up_2: 1085626835
+      e4_up_3: 951291912
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

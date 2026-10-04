@@ -109,89 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy2NormalLeft_0
+      name: e2_left_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 30
-        width: 123
-        height: 48
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e8d61cf4e8a6dd450800000000000000
-      internalID: 6115161028494978446
+      spriteID: 37fb6f7c8df270640ae07f65d3371ff1
+      internalID: -400849478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy2NormalLeft_1
+      name: e2_left_1
       rect:
         serializedVersion: 2
-        x: 130
-        y: 27
-        width: 123
-        height: 51
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a91d2033f0d281280800000000000000
-      internalID: -9072451906034282086
+      spriteID: 245906193d91b8248a54144127bb522b
+      internalID: -813858101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy2NormalLeft_2
+      name: e2_left_2
       rect:
         serializedVersion: 2
-        x: 258
-        y: 26
-        width: 120
-        height: 52
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4865a86fd49f229d0800000000000000
-      internalID: -2800401905026967932
+      spriteID: 95bdf5f09c649684181200a052a167ba
+      internalID: 394110620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy2NormalLeft_3
+      name: e2_left_3
       rect:
         serializedVersion: 2
-        x: 386
-        y: 29
-        width: 117
-        height: 50
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 85da3fac037401990800000000000000
-      internalID: -7417350311390237352
+      spriteID: 84a6111c88180584eb4d8a8010123c91
+      internalID: 682040967
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4dd42d04aef0785408861dfee5cfa3e7
     internalID: 0
     vertices: []
     indices: 
@@ -208,12 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Enemy2NormalLeft_0: 6115161028494978446
-      Enemy2NormalLeft_1: -9072451906034282086
-      Enemy2NormalLeft_2: -2800401905026967932
-      Enemy2NormalLeft_3: -7417350311390237352
+      e2_left_0: -400849478
+      e2_left_1: -813858101
+      e2_left_2: 394110620
+      e2_left_3: 682040967
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
