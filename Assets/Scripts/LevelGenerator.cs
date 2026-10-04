@@ -82,6 +82,7 @@ public class LevelGenerator : MonoBehaviour
     void Start()
     {
         Destroy(GameObject.Find("Level 01 (Generated)"));
+        Destroy(GameObject.Find("Level 01"));
         GameObject level = new GameObject("Quadrant (Generated)");
         Sprite[] sprites = new Sprite[9];
         rotate = new float[levelMap.GetLength(0),levelMap.GetLength(1)];
@@ -140,6 +141,12 @@ public class LevelGenerator : MonoBehaviour
                     renderer.sprite = sprites[type];
                     tile.transform.position = new Vector3(2*col, 2*(levelMap.GetLength(0)-row), 0);
                     tile.transform.rotation = Quaternion.Euler(0,0,rotate[row,col]);
+                    if (type == 6)
+                    {
+                        Animator animator = tile.AddComponent<Animator>();
+                        animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("walls/6");    
+                        tile.transform.localScale = new Vector3(2,2,0);            
+                    }
                     tiles[row,col] = tile;
                 }
         }
